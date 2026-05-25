@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: metoushela-api
+    env: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: API_KEY_21ST
+        sync: false
+      - key: AGENT_BASE_URL
+        value: https://relay.21st.dev
+      - key: MY_API_SECRET_KEY
+        sync: false
+      - key: NODE_ENV
+        value: production
