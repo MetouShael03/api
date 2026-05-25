@@ -1,0 +1,21 @@
+{
+  "name": "my-ai-api",
+  "version": "1.0.0",
+  "description": "API IA centrale — 21st.dev sur Vercel",
+  "scripts": {
+    "build:agent": "npx @21st-sdk/cli deploy",
+    "deploy:agent": "npx @21st-sdk/cli login && npx @21st-sdk/cli deploy",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@21st-sdk/agent": "latest",
+    "@21st-sdk/node": "latest",
+    "@vercel/node": "^3.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vercel": "^34.0.0"
+  }
+}
